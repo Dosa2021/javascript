@@ -15,6 +15,9 @@
     right: 0;
     left: 0;
 }
+#mask.hidden {
+    display: none;
+}
 
 #modal {
     background: #fff;
@@ -27,6 +30,11 @@
     margin: auto;
     border-radius: 4px;
 }
+#modal.hidden {
+    transform: translate(0, -500px);
+}
+
 #modal > p {
     text-align: center;
 }
+
