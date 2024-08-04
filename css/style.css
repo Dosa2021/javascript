@@ -7,6 +7,7 @@
     border-radius: 4px;
 }
 
+/* NOTE: modalの背景のcssだが、もっといい方法ないか？ */
 #mask {
     background: rgba(0, 0, 0, 0.4);
     position: fixed;
@@ -29,6 +30,7 @@
     right: 0;
     margin: auto;
     border-radius: 4px;
+    transition: transform 0.5s;
 }
 #modal.hidden {
     transform: translate(0, -500px);
