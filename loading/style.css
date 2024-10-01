@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ローディング画面 */
+#loading {
+    padding-top: 300px;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #0bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.spinner {
+    text-align: center;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
