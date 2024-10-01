@@ -1,0 +1,43 @@
+#open, #close {
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* NOTE: modalの背景のcssだが、もっといい方法ないか？ */
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#mask.hidden {
+    display: none;
+}
+
+#modal {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 4px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+#modal.hidden {
+    transform: translate(0, -500px);
+}
+
+#modal > p {
+    text-align: center;
+}
+
